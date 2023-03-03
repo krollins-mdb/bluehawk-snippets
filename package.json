@@ -1,0 +1,20 @@
+{
+  "name": "bluehawk-snippets",
+  "displayName": "Bluehawk Snippets",
+  "description": "VS Code snippets for the Bluehawk markup processor.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "",
+        "path": "./snippets/bluehawk-snippets"
+      }
+    ]
+  }
+}

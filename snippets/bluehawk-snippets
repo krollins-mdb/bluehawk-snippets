@@ -1,0 +1,123 @@
+{
+	"Bluehawk: start snippet": {
+		"prefix": "bss",
+		"body": [
+			"$LINE_COMMENT :snippet-start: ${1:snippet-name}"
+		],
+		"description": "Start Bluehawk snippet"
+	},
+	"Bluehawk: end snippet": {
+		"prefix": "bse",
+		"body": [
+			"$LINE_COMMENT :snippet-end:$1"
+		],
+		"description": "End Bluehawk snippet"
+	},
+	"Bluehawk: full snippet": {
+		"prefix": "bsf",
+		"body": [
+			"$LINE_COMMENT :snippet-start: ${1:snippet-name}",
+			"$2",
+			"$LINE_COMMENT :snippet-end:"
+		],
+		"description": "Full Bluehawk snippet"
+	},
+	"Bluehawk: start replace": {
+		"prefix": "brs",
+		"body": [
+			"$LINE_COMMENT :replace-start: {",
+			"$LINE_COMMENT    \"terms\": {",
+			"$LINE_COMMENT       \"${1:TermToReplace}\": \"${2:ReplaceWith}\"",
+			"$LINE_COMMENT    }",
+			"$LINE_COMMENT }"
+		],
+		"description": "Start Bluehawk snippet"
+	},
+	"Bluehawk: end replace": {
+		"prefix": "bre",
+		"body": [
+			"$LINE_COMMENT :replace-end:$1"
+		],
+		"description": "End Bluehawk snippet"
+	},
+	"Bluehawk: full replace": {
+		"prefix": "brf",
+		"body": [
+			"$LINE_COMMENT :replace-start: {",
+			"$LINE_COMMENT    \"terms\": {",
+			"$LINE_COMMENT       \"${1:TermToReplace}\": \"${2:ReplaceWith}\"",
+			"$LINE_COMMENT    }",
+			"$LINE_COMMENT }",
+			"$3",
+			"$LINE_COMMENT :replace-end:"
+		],
+		"description": "Full Bluehawk snippet"
+	},
+	"Bluehawk: emphasize line": {
+		"prefix": "bel",
+		"body": [
+			"$LINE_COMMENT :emphasize:$1"
+		],
+		"description": "Bluehawk emphasize single line"
+	},
+	"Bluehawk: remove line": {
+		"prefix": "breml",
+		"body": [
+			"$LINE_COMMENT :remove:$1"
+		],
+		"description": "Bluehawk remove single line"
+	},
+	"Bluehawk: full remove": {
+		"prefix": "bremf",
+		"body": [
+			"$LINE_COMMENT :remove-start:",
+			"$1",
+			"$LINE_COMMENT :remove-end:"
+		],
+		"description": "Full Bluehawk remove"
+	},
+	"Bluehawk: start remove": {
+		"prefix": "brems",
+		"body": [
+			"$LINE_COMMENT :remove-start:$1"
+		],
+		"description": "Full Bluehawk remove"
+	},
+	"Bluehawk: end remove": {
+		"prefix": "breme",
+		"body": [
+			"$LINE_COMMENT :remove-end:$1"
+		],
+		"description": "Full Bluehawk remove"
+	},
+	"Bluehawk: uncomment line": {
+		"prefix": "bul",
+		"body": [
+			"$LINE_COMMENT :uncomment:$1"
+		],
+		"description": "Bluehawk uncomment single line"
+	},
+	"Bluehawk: full uncomment": {
+		"prefix": "buf",
+		"body": [
+			"$LINE_COMMENT :uncomment-start:",
+			"$1",
+			"$LINE_COMMENT :uncomment-end:"
+		],
+		"description": "Full Bluehawk uncomment"
+	},
+	"Bluehawk: start uncomment": {
+		"prefix": "bus",
+		"body": [
+			"$LINE_COMMENT :uncomment-start:$1"
+		],
+		"description": "Start Bluehawk uncomment"
+	},
+	"Bluehawk: end uncomment": {
+		"prefix": "bue",
+		"body": [
+			"$LINE_COMMENT :uncomment-end:$1"
+		],
+		"description": "End Bluehawk uncomment"
+	}
+}
