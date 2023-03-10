@@ -10,6 +10,7 @@
   "categories": [
     "Snippets"
   ],
+  "icon": "images/bluehawk.png",
   "contributes": {
     "snippets": [
       {
