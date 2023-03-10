@@ -2,7 +2,7 @@
   "name": "bluehawk-snippets",
   "displayName": "Bluehawk Snippets",
   "description": "VS Code snippets for the Bluehawk markup processor.",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "publisher": "bluehawk",
   "engines": {
     "vscode": "^1.76.0"
@@ -15,7 +15,7 @@
     "snippets": [
       {
         "language": "",
-        "path": "./snippets/bluehawk-snippets"
+        "path": "./snippets/bluehawk-snippets.code-snippets"
       }
     ]
   },

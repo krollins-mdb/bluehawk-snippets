@@ -29,7 +29,7 @@
 			"$LINE_COMMENT    \"terms\": {",
 			"$LINE_COMMENT       \"${1:TermToReplace}\": \"${2:ReplaceWith}\"",
 			"$LINE_COMMENT    }",
-			"$LINE_COMMENT }"
+			"$LINE_COMMENT }",
 		],
 		"description": "Start Bluehawk snippet"
 	},
@@ -56,14 +56,14 @@
 	"Bluehawk: emphasize line": {
 		"prefix": "bel",
 		"body": [
-			"$LINE_COMMENT :emphasize:$1"
+			"$LINE_COMMENT :emphasize:$1",
 		],
 		"description": "Bluehawk emphasize single line"
 	},
 	"Bluehawk: remove line": {
 		"prefix": "breml",
 		"body": [
-			"$LINE_COMMENT :remove:$1"
+			"$LINE_COMMENT :remove:$1",
 		],
 		"description": "Bluehawk remove single line"
 	},
@@ -93,7 +93,7 @@
 	"Bluehawk: uncomment line": {
 		"prefix": "bul",
 		"body": [
-			"$LINE_COMMENT :uncomment:$1"
+			"$LINE_COMMENT :uncomment:$1",
 		],
 		"description": "Bluehawk uncomment single line"
 	},
@@ -109,7 +109,7 @@
 	"Bluehawk: start uncomment": {
 		"prefix": "bus",
 		"body": [
-			"$LINE_COMMENT :uncomment-start:$1"
+			"$LINE_COMMENT :uncomment-start:$1",
 		],
 		"description": "Start Bluehawk uncomment"
 	},
@@ -119,5 +119,5 @@
 			"$LINE_COMMENT :uncomment-end:$1"
 		],
 		"description": "End Bluehawk uncomment"
-	}
+	},
 }
