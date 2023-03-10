@@ -3,6 +3,7 @@
   "displayName": "Bluehawk Snippets",
   "description": "VS Code snippets for the Bluehawk markup processor.",
   "version": "0.0.1",
+  "publisher": "realm-docs",
   "engines": {
     "vscode": "^1.76.0"
   },

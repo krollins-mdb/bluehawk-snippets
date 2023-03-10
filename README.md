@@ -1,65 +1,42 @@
 # bluehawk-snippets README
 
-This is the README for your extension "bluehawk-snippets". After writing up a brief description, we recommend including the following sections.
+This extension adds snippets for the [Bluehawk markup processor](https://mongodb-university.github.io/Bluehawk/).
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+`bluehawk-snippets` lets you quickly add Bluehawk tags by typing out triggers,
+then letting VS Code autocomplete the tag for you.
 
-For example if there is an image subfolder under your extension project workspace:
+### Triggers
 
-\!\[feature X\]\(images/feature-x.png\)
+Triggers usually consist of three letters, always beginning with a `b`, followed
+by the first letter of the Bluhawk tag's name. In cases where there are
+duplicates, the trigger may be longer.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+| Trigger | Description |
+|---------|-------------|
+| bss     | Start a Bluehawk snippet block: `:snippet-start: <name-of-snippet>`. |
+| bse     | End a Bluehawk snippet block: `:snippet-end:`. |
+| bsf     | Create a full Bluehawk snippet block, with both `:snippet-start:` and `:snippet-end:`. |
+| brs     | Start a Bluehawk replace block. |
+| bre     | End a Bluehawk replace block: `:replace-end:`. |
+| brf     | Create a full Bluehawk replace block. |
+| bel     | Emphasize a single line: `:emphasize:`. |
+| breml   | Remove a single line: `:remove:`. |
+| brems   | Start a Bluehawk remove block: `:remove-start:`. |
+| breme   | End a Bluehawk remove block: `:remove-end:`. |
+| bremf   | Create a full Bluehawk remove block, with both `:remove-start:` and `:remove-end:`. |
+| bul     | Uncomment a single line: `:uncomment:`. |
+| bus     | Start a Bluehawk uncomment block: `:uncomment-start:`. |
+| bue     | End a Bluehawk uncomment block: `:uncomment-end:`. |
+| buf     | Create a full Bluehawk uncomment block, with both `:uncomment-start:` and `:uncomment-end:`. |
 
-## Requirements
+### Dynamic comment format
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Because Bluehawk tags are commented lines, this extension takes into account the
+different comment formatting in languages that VS Code supports.
 
-## Extension Settings
+## Known issues
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- Snippets in JSX don't work. Currently, snippets don't understand the JSX
+contexts.
