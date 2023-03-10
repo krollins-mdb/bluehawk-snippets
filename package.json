@@ -3,7 +3,7 @@
   "displayName": "Bluehawk Snippets",
   "description": "VS Code snippets for the Bluehawk markup processor.",
   "version": "0.0.1",
-  "publisher": "realm-docs",
+  "publisher": "bluehawk",
   "engines": {
     "vscode": "^1.76.0"
   },
@@ -17,5 +17,9 @@
         "path": "./snippets/bluehawk-snippets"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krollins-mdb/bluehawk-snippets.git"
   }
 }
